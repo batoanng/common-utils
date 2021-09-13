@@ -1,0 +1,34 @@
+{
+  "name": "common-js-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "pub": "git add . && git commit -m \"update version\" && git push origin master && npm version patch && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joker7t/common-js-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joker7t/common-js-code/issues"
+  },
+  "homepage": "https://github.com/joker7t/common-js-code#readme",
+  "devDependencies": {
+    "prettier": "^2.4.0",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1"
+  }
+}
