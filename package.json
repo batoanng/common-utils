@@ -1,5 +1,5 @@
 {
-  "name": "common-js-code",
+  "name": "@joker7t/common",
   "version": "1.0.0",
   "description": "",
   "main": "./build/index.js",
