@@ -1,5 +1,5 @@
 {
-  "name": "@joker7t/common",
+  "name": "@joker7t/common-utils",
   "version": "1.0.0",
   "description": "",
   "main": "./build/index.js",
