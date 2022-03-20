@@ -1,11 +1,51 @@
 {
   "compilerOptions": {
-    "target": "ES6",                                /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
-    "module": "commonjs",                           /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
-    "declaration": true,                            /* Generates corresponding '.d.ts' file. */
-    "outDir": "./build",                            /* Redirect output structure to the directory. */
-    "esModuleInterop": true,                        /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
-    "skipLibCheck": true,                           /* Skip type checking of declaration files. */
-    "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
-  }
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "target": "esnext",
+    "module": "esnext",
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "inlineSources": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noImplicitThis": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressExcessPropertyErrors": true,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "isolatedModules": false,
+    "noEmit": false,
+    "removeComments": false,
+    "allowJs": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2017",
+      "esnext"
+    ],
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "**/module",
+    "packages/*/**/*.test.ts"
+  ],
+  "include": [
+    "./src/*/**/*.ts",
+    "./src/*/**/*.tsx",
+    "./src/*/**/*.d.ts",
+    "*.d.ts"
+  ]
 }

@@ -11,8 +11,8 @@ export class NotAuthorizedError extends CustomerError {
     serializeError() {
         return [
             {
-                message: 'Not authorized',
-            },
+                message: 'Not authorized'
+            }
         ];
     }
 }

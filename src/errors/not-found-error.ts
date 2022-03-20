@@ -11,8 +11,8 @@ export class NotFoundError extends CustomerError {
     serializeError() {
         return [
             {
-                message: 'not found',
-            },
+                message: 'not found'
+            }
         ];
     }
 }

@@ -1,0 +1,13 @@
+coverage
+**/build
+**/dist
+**/module
+**/browser
+temp
+**/node_modules
+*.d.ts
+*.d.js
+*.config.js
+sonarQube.js
+config-overrides.js
+setupTests.js

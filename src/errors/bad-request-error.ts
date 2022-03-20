@@ -2,6 +2,7 @@ import { CustomerError } from './custom-error';
 
 export class BadRequestError extends CustomerError {
     errorCode = 400;
+
     msg: string;
 
     constructor(errorMsg: string) {
@@ -13,8 +14,8 @@ export class BadRequestError extends CustomerError {
     serializeError() {
         return [
             {
-                message: this.msg,
-            },
+                message: this.msg
+            }
         ];
     }
 }

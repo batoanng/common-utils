@@ -1,22 +1,26 @@
 # common-utils
 
+### This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️.
+
 NPM page: https://www.npmjs.com/package/@joker7t/common-utils
 
 **Installation:**
->npm i @joker7t/common-utils
- 
-or
+
+Using Yarn
 
 > yarn add @joker7t/common-utils
 
-**Version:**
+Using NPM
+>npm i @joker7t/common-utils
 
-`1.0.0`:
+## **Version:**
+
+### `1.0.1`
 - Template for common api error
-  - bad-request-error
-  - database-connection-error
-  - not-authorized-error
-  - not-found-error
-  - request-validation-error
-
+  - BadRequestError
+  - DatabaseConnectionError
+  - NotAuthorizedError
+  - NotFoundError
+  - RequestValidationError
+  - CustomerError
 

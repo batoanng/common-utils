@@ -3,6 +3,7 @@ import { CustomerError } from './custom-error';
 
 export class RequestValidationError extends CustomerError {
     errorCode = 400;
+
     constructor(private errors: ValidationError[]) {
         super('Invalid parameters');
         Object.setPrototypeOf(this, RequestValidationError.prototype);
@@ -12,7 +13,7 @@ export class RequestValidationError extends CustomerError {
         return this.errors.map((err) => {
             return {
                 message: err.msg,
-                field: err.param,
+                field: err.param
             };
         });
     }

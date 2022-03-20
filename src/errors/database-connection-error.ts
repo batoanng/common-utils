@@ -2,6 +2,7 @@ import { CustomerError } from './custom-error';
 
 export class DatabaseConnectionError extends CustomerError {
     errorCode = 500;
+
     private reason = 'Error while connect to the database';
 
     constructor() {
@@ -12,8 +13,8 @@ export class DatabaseConnectionError extends CustomerError {
     serializeError() {
         return [
             {
-                message: this.reason,
-            },
+                message: this.reason
+            }
         ];
     }
 }
