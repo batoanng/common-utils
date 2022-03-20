@@ -1,51 +1,51 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./",
-    "rootDir": "./src",
-    "target": "esnext",
-    "module": "esnext",
-    "sourceMap": true,
-    "inlineSourceMap": false,
-    "inlineSources": true,
-    "declaration": true,
-    "declarationMap": true,
-    "noEmitOnError": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "noImplicitThis": true,
-    "importHelpers": true,
-    "allowSyntheticDefaultImports": true,
-    "suppressExcessPropertyErrors": true,
-    "outDir": "./build",
-    "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "isolatedModules": false,
-    "noEmit": false,
-    "removeComments": false,
-    "allowJs": false,
-    "noImplicitAny": false,
-    "strictNullChecks": false,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "es2017",
-      "esnext"
+    "compilerOptions": {
+        "baseUrl": "./",
+        "rootDir": "./src",
+        "target": "esnext",
+        "module": "esnext",
+        "sourceMap": true,
+        "inlineSourceMap": false,
+        "inlineSources": true,
+        "declaration": true,
+        "declarationMap": true,
+        "noEmitOnError": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "noImplicitThis": true,
+        "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
+        "suppressExcessPropertyErrors": true,
+        "outDir": "./build",
+        "esModuleInterop": true,
+        "noUnusedLocals": true,
+        "isolatedModules": false,
+        "noEmit": false,
+        "removeComments": false,
+        "allowJs": false,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "downlevelIteration": true,
+        "skipLibCheck": true,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "es2017",
+            "esnext"
+        ],
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "**/node_modules",
+        "**/dist",
+        "**/module",
+        "packages/*/**/*.test.ts"
     ],
-    "resolveJsonModule": true
-  },
-  "exclude": [
-    "**/node_modules",
-    "**/dist",
-    "**/module",
-    "packages/*/**/*.test.ts"
-  ],
-  "include": [
-    "./src/*/**/*.ts",
-    "./src/*/**/*.tsx",
-    "./src/*/**/*.d.ts",
-    "*.d.ts"
-  ]
+    "include": [
+        "./src/*/**/*.ts",
+        "./src/*/**/*.tsx",
+        "./src/*/**/*.d.ts",
+        "*.d.ts"
+    ]
 }
