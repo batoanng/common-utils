@@ -15,6 +15,11 @@ Using NPM
 
 ## **Version:**
 
+### `1.0.2`
+- Async utils
+  - sleep: returns a promise that resolves after for the given number of seconds using setTimeout.
+  - 
+
 ### `1.0.1`
 - Template for common api error
   - BadRequestError
