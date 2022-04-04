@@ -30,6 +30,10 @@ function format(value: string): string {
     return result;
 }
 
+/**
+ * Parsing error to message
+ * @param error
+ */
 export function errorText(error: unknown): string {
     return format(parseError(error));
 }
