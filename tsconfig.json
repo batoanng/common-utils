@@ -40,7 +40,7 @@
         "**/node_modules",
         "**/dist",
         "**/module",
-        "packages/*/**/*.test.ts"
+        "**/*.test.ts"
     ],
     "include": [
         "./src/*/**/*.ts",

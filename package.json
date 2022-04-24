@@ -1,13 +1,16 @@
 {
+    "author": "Toan Nguyen Ba",
     "name": "@joker7t/common-utils",
     "version": "1.0.2",
-    "description": "",
+    "description": "This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️",
+    "keywords": [],
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "files": [
         "build/**/*"
     ],
     "scripts": {
+        "dev": "tsc --watch --preserveWatchOutput",
         "build": "tsc",
         "pub": "npm test && git add . && git commit -m \"update version\" && git push origin master && npm version patch && npm run build && npm publish",
         "test": "NODE_ENV=test yarn lint && jest --config jest.config.js",
@@ -21,8 +24,6 @@
         "type": "git",
         "url": "git+https://github.com/joker7t/common-js-code.git"
     },
-    "keywords": [],
-    "author": "",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/joker7t/common-js-code/issues"

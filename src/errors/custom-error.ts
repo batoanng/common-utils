@@ -1,9 +1,9 @@
-export abstract class CustomerError extends Error {
-    public abstract errorCode: number;
+export abstract class CustomError extends Error {
+    public abstract status: number;
 
     protected constructor(message: string) {
         super(message);
-        Object.setPrototypeOf(this, CustomerError.prototype);
+        Object.setPrototypeOf(this, CustomError.prototype);
     }
 
     public abstract serializeError(): {
