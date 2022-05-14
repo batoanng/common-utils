@@ -1,15 +1,4 @@
-/**
- * This file is use to centralize and re-export all resources
- * which allows user to import without suffix
- * i.e.
- *   import { ApiBadRequestError } from '@joker7t/common-utils';
- *
- *   instead of:
- *
- *   import { ApiBadRequestError } from '@joker7t/common-utils/errors/api-bad-request-error';
- */
-
-// Export errors
+// Errors
 export * from './errors/custom-error';
 export * from './errors/api-bad-request-error';
 export * from './errors/api-request-validation-error';
@@ -33,3 +22,4 @@ export * from './utils/date';
 // Async utils
 export * from './async-utils/sleep';
 export * from './async-utils/lock';
+export * from './async-utils/http-client';

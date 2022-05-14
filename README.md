@@ -7,7 +7,6 @@ NPM page: https://www.npmjs.com/package/@joker7t/common-utils
 **Installation:**
 
 Using Yarn
-
 > yarn add @joker7t/common-utils
 
 Using NPM

@@ -8,16 +8,19 @@ import { CustomError } from './custom-error';
  */
 export class ApiNetworkError extends CustomError {
     status = 0;
+    msg: string;
 
-    constructor() {
-        super('Network error');
+    constructor(errorMsg?: string) {
+        const msg = errorMsg || 'Network error';
+        super(msg);
+        this.msg = msg;
         Object.setPrototypeOf(this, ApiNetworkError.prototype);
     }
 
     serializeError() {
         return [
             {
-                message: 'Network error'
+                message: this.msg
             }
         ];
     }

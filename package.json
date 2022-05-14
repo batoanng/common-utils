@@ -3,7 +3,9 @@
     "name": "@joker7t/common-utils",
     "version": "1.0.2",
     "description": "This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️",
-    "keywords": [],
+    "keywords": [
+        "common-utils"
+    ],
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "files": [
@@ -12,7 +14,8 @@
     "scripts": {
         "dev": "tsc --watch --preserveWatchOutput",
         "build": "tsc",
-        "pub": "npm test && git add . && git commit -m \"update version\" && git push origin master && npm version patch && npm run build && npm publish",
+        "prepublishOnly": "yarn build",
+        "pub": "npm test && git add . && git commit -m \"update version\" && git push origin master && npm version patch && yarn build && yarn publish",
         "test": "NODE_ENV=test yarn lint && jest --config jest.config.js",
         "test:watch": "NODE_ENV=test yarn lint && jest --config jest.config.js --watch",
         "test:ci": "CI=true yarn test",
@@ -54,6 +57,7 @@
         "enzyme": "^3.11.0",
         "express": "^4.17.1",
         "express-validator": "^6.12.1",
+        "jest-mock-extended": "^2.0.6",
         "lodash": "^4.17.21"
     },
     "lint-staged": {
