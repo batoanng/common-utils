@@ -1,5 +1,5 @@
-import { ApiMethod } from './types';
 import { DependencyList, useCallback, useState } from 'react';
+import { ApiMethod } from './types';
 
 export interface AsyncCallbackState<T> {
     data: T | undefined;

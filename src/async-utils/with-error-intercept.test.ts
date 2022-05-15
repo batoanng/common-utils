@@ -50,7 +50,7 @@ describe('withErrorIntercept', () => {
             {
                 attempts: 10,
                 backoff: backoffFixed(0),
-                when: when
+                when
             },
             fn
         );

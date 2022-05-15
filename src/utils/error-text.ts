@@ -24,7 +24,7 @@ function parseError(error: unknown): string {
 // Final full stop
 function format(value: string): string {
     let result = capitalize(value);
-    if (!['.', '!', '?'].includes(last(value))) {
+    if (!['.', '!', '?'].includes(last(value) || '')) {
         result += '.';
     }
     return result;

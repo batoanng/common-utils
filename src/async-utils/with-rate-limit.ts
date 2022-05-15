@@ -1,6 +1,6 @@
+import { clone } from 'lodash';
 import { AsyncFunction, RateLimiterState, RateLimitOptions } from './types';
 import { withConcurrencyLimit } from './with-concurrency-limit';
-import { clone } from 'lodash';
 import { sleep } from './sleep';
 
 export function withRateLimit<T extends AsyncFunction<any>>(options: RateLimitOptions, callback: T): T {

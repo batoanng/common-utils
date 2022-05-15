@@ -134,7 +134,7 @@ async function httpStatusInterceptor(response: FetchResponse) {
 
 async function fetchErrorInterceptor(error: unknown): Promise<unknown> {
     if (error && typeof error === 'object' && 'message' in error) {
-        const message = (error as any).message;
+        const { message } = error as any;
 
         const knownNetworkErrorMessages = [
             'Network error when attempting to fetch resource.', // firefox
@@ -212,7 +212,7 @@ export class HttpClient {
         // if rateLimit options are not disabled, then wrap the fetch function with rate limiting logic
         if (options.rateLimit !== false) {
             // rate limit logic ensures the fetch function can only be called as quickly as the rate limiter options allow.
-            this.fetcher = withRateLimit(Object.assign({}, defaultRateLimitOptions, options.rateLimit), this.fetcher);
+            this.fetcher = withRateLimit({ ...defaultRateLimitOptions, ...options.rateLimit }, this.fetcher);
         }
 
         if (!options.disableErrorTransform) {
@@ -256,7 +256,7 @@ export class HttpClient {
         };
 
         if (this.options.retry !== false) {
-            const retryOpts = Object.assign({}, defaultRetryOptions, this.options.retry);
+            const retryOpts = { ...defaultRetryOptions, ...this.options.retry };
             dofetch = withRetry(retryOpts, dofetch);
         }
 

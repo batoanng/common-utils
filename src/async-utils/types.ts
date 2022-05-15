@@ -94,7 +94,7 @@ export type FetchRequestInit = {
      */
     signal?: AbortSignal | null;
 
-    //node-fetch extension
+    // node-fetch extension
     /**
      * agent must be a http.Agent or https.Agent. from the nodejs 'http' and 'https' package
      */

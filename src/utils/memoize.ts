@@ -13,7 +13,7 @@
 export function memoize<T extends Function>(func: T): T {
     const cache = new Map();
 
-    const memoized = (...args) => {
+    const memoized = (...args: any) => {
         let innerCache = cache;
         for (let i = 0; i < func.length - 1; i++) {
             const key = args[i];

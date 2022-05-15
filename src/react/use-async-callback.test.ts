@@ -67,7 +67,7 @@ describe('useAsyncCallback', () => {
         expect(hook.result.current[1]).toStrictEqual<AsyncCallbackState<string>>({
             called: true,
             data: undefined,
-            error: error,
+            error,
             loading: false,
             reset: expect.any(Function)
         });

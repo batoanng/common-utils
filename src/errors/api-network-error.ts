@@ -8,6 +8,7 @@ import { CustomError } from './custom-error';
  */
 export class ApiNetworkError extends CustomError {
     status = 0;
+
     msg: string;
 
     constructor(errorMsg?: string) {

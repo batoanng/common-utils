@@ -63,7 +63,7 @@ export function backoffExponential(options: ExponentialBackoffOptions): RetryOpt
 
         return async () => {
             attempts++;
-            backoff = backoff + options.initialSeconds * attempts;
+            backoff += options.initialSeconds * attempts;
             backoff = Math.min(backoff, options.maxSeconds);
             await sleep(backoff);
         };

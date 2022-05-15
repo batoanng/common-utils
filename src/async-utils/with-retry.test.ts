@@ -1,4 +1,5 @@
-import { backoffFixed, RetryOptions, withRetry } from './with-retry';
+import { backoffFixed, withRetry } from './with-retry';
+import { RetryOptions } from './types';
 
 describe('withRetry', () => {
     let count = 0;

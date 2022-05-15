@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks';
-import { useCompareMemo } from './use-compare-memo';
 import { cloneDeep } from 'lodash';
+import { useCompareMemo } from './use-compare-memo';
 
 describe('useCompareMemo', () => {
     it('should cache input reference until structural equality change', () => {

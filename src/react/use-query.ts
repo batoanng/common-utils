@@ -1,5 +1,5 @@
-import { ApiMethod } from './types';
 import { useCallback, useEffect, useState } from 'react';
+import { ApiMethod } from './types';
 import { useCompareMemo } from './use-compare-memo';
 
 export interface QueryState<T> {
