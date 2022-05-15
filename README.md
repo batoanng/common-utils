@@ -14,7 +14,7 @@ Using NPM
 
 ## **Versions:**
 
-### `1.0.3`
+### `1.0.4`
 - React:
     - **useQuery**
       - The useQuery hook id the best used for loading some data from an API that need to be used right away in the react component.
