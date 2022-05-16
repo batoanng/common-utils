@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "esnext",
-        "module": "commonjs",
+        "module": "esnext",
         "lib": ["es6", "es5", "es7", "dom"],
         "allowJs": true,
         "esModuleInterop": true,
@@ -9,12 +9,11 @@
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "declaration": true,
-        "outDir": "./dist",
+        "outDir": "./build",
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "jsx": "react"
     },
-    "exclude": [
-        "src/node_modules", "dist"]
+    "exclude": ["node_modules", "build", "src/*/**/*.test.ts"]
 }

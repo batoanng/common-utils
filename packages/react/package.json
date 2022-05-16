@@ -30,7 +30,7 @@
     "bugs": {
         "url": "https://github.com/joker7t/common-js-code/issues"
     },
-    "homepage": "https://github.com/joker7t/common-js-code#readme",
+    "homepage": "https://github.com/joker7t/common-utils/packages/react#readme",
     "devDependencies": {
         "@testing-library/react": "^12.1.4",
         "@testing-library/react-hooks": "^7.0.2",

@@ -1,3 +1,3 @@
-export * from './react/use-mutation';
-export * from './react/use-query';
-export * from './react/use-query-lazy';
+export * from './hooks/use-mutation';
+export * from './hooks/use-query';
+export * from './hooks/use-query-lazy';

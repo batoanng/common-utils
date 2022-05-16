@@ -1,7 +1,7 @@
 {
     "author": "Toan Nguyen Ba",
     "name": "@joker7t/common-utils",
-    "version": "1.0.4",
+    "version": "2.0.0",
     "private": true,
     "description": "This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️",
     "scripts": {
@@ -12,13 +12,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/joker7t/common-js-code.git"
+        "url": "git+https://github.com/joker7t/common-utils.git"
     },
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/joker7t/common-js-code/issues"
+        "url": "https://github.com/joker7t/common-utils/issues"
     },
-    "homepage": "https://github.com/joker7t/common-js-code#readme",
+    "homepage": "https://github.com/joker7t/common-utils#readme",
     "devDependencies": {
         "@types/jest": "^27.4.1",
         "@types/lodash": "^4.14.182",

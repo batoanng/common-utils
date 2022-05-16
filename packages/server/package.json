@@ -22,15 +22,8 @@
         "postcoverage": "open-cli coverage/lcov-report/index.html",
         "lint": "eslint src --ext js,ts,tsx --fix"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/joker7t/common-js-code.git"
-    },
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/joker7t/common-js-code/issues"
-    },
-    "homepage": "https://github.com/joker7t/common-js-code#readme",
+    "homepage": "https://github.com/joker7t/common-utils/packages/server/#readme",
     "devDependencies": {
         "@types/express": "^4.17.13"
     },

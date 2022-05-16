@@ -3,11 +3,11 @@ import { isEqual } from 'lodash';
 
 /**
  * useCompareMemo memorizes the given value and only returns a new reference when the structure-base-equality
- * changes between react renders.
+ * changes between hooks renders.
  *
  * why?
  *
- * consider react component that renders a hook like so:
+ * consider hooks component that renders a hook like so:
  *
  * ```
  * function MyComponent(props) {
@@ -44,16 +44,16 @@ import { isEqual } from 'lodash';
  * }
  * ```
  *
- * the useQuery hook wants to run an effect when an argument changes, so we add the argument to the react deps array.
+ * the useQuery hook wants to run an effect when an argument changes, so we add the argument to the hooks deps array.
  *
- * but here is the subtlety: react hook deps work on reference equality for objects.
+ * but here is the subtlety: hooks hook deps work on reference equality for objects.
  *
  * so each time MyComponent re-renders, it will pass a new object to useQuery and useQuery's effect will run again
  * causing an infinity API call loop.
  *
  * so useCompareMemo exists to solve this problem by acting as a reference cache.
  *
- * useCompareMemo accepts an input reference and caches it between react renders. if the input references change
+ * useCompareMemo accepts an input reference and caches it between hooks renders. if the input references change
  * between re-renders useCompareMemo will use lodash.Equal to determine if the new reference points to something
  * that's structurally equal and if so, will return the cached reference.
  *
