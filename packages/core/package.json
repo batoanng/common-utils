@@ -1,11 +1,11 @@
 {
     "author": "Toan Nguyen Ba",
-    "name": "@joker7t/common-utils-core",
+    "name": "@joker7t/common-core",
     "version": "1.0.0",
     "description": "",
-    "keywords": [
-        "common-utils-core"
-    ],
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "files": [

@@ -1,5 +1,5 @@
 import { ValidationError } from 'express-validator';
-import { CustomError } from '@joker7t/common-utils-core';
+import { CustomError } from '@joker7t/common-core';
 
 /**
  * This is an enhanced version of BadRequestError, built in with express validator

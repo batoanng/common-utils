@@ -1,11 +1,11 @@
 {
     "author": "Toan Nguyen Ba",
-    "name": "@joker7t/common-utils-react",
+    "name": "@joker7t/common-react",
     "version": "1.0.0",
     "description": "",
-    "keywords": [
-        "common-utils-react"
-    ],
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "files": [
@@ -35,12 +35,12 @@
         "@testing-library/react": "^12.1.4",
         "@testing-library/react-hooks": "^7.0.2",
         "@types/react": "^17.0.43",
-        "enzyme-to-json": "^3.6.2",
         "enzyme": "^3.11.0",
+        "enzyme-to-json": "^3.6.2",
         "react-test-renderer": "^17.0.2"
     },
     "dependencies": {
-        "@joker7t/common-utils-core": "^1.0.0",
+        "@joker7t/common-core": "^1.0.0",
         "react": "^17.0.2"
     },
     "lint-staged": {

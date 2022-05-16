@@ -15,5 +15,6 @@
         "skipLibCheck": true,
         "jsx": "react"
     },
-    "exclude": ["node_modules", "dist"]
+    "exclude": [
+        "src/node_modules", "dist"]
 }

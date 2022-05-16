@@ -4,9 +4,6 @@
     "version": "1.0.4",
     "private": true,
     "description": "This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️",
-    "keywords": [
-        "common-utils"
-    ],
     "scripts": {
         "test": "lerna run test --parallel",
         "start": "lerna run start --parallel",
@@ -45,16 +42,6 @@
     },
     "dependencies": {
         "lodash": "^4.17.21"
-    },
-    "lint-staged": {
-        "*.{js,ts,jsx}": [
-            "yarn lint"
-        ]
-    },
-    "jestSonar": {
-        "reportPath": "reports",
-        "reportFile": "test-reporter.xml",
-        "indent": 4
     },
     "workspaces": [
         "packages/core",
