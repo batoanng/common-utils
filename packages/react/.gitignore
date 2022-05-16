@@ -1,0 +1,15 @@
+/node_modules
+/build
+.idea
+
+#SonarQube
+reports/
+.scannerwork/
+
+.eslintcache
+
+coverage
+
+lib-cov
+
+yarn-error.log
