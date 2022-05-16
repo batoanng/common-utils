@@ -1,0 +1,48 @@
+{
+    "author": "Toan Nguyen Ba",
+    "name": "@joker7t/common-utils-core",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "common-utils-core"
+    ],
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
+    "files": [
+        "build/**/*"
+    ],
+    "scripts": {
+        "dev": "tsc --watch --preserveWatchOutput",
+        "build": "tsc",
+        "prepublishOnly": "yarn build",
+        "test": "NODE_ENV=test && yarn lint && jest --config jest.config.js",
+        "test:watch": "NODE_ENV=test && yarn lint && jest --config jest.config.js --watch",
+        "test:ci": "CI=true yarn test",
+        "coverage": "yarn test --coverage",
+        "postcoverage": "open-cli coverage/lcov-report/index.html",
+        "lint": "eslint . --ext js,ts,tsx --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joker7t/common-js-code.git"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/joker7t/common-js-code/issues"
+    },
+    "homepage": "https://github.com/joker7t/common-js-code#readme",
+    "devDependencies": {
+    },
+    "dependencies": {
+    },
+    "lint-staged": {
+        "*.{js,ts,jsx}": [
+            "yarn lint"
+        ]
+    },
+    "jestSonar": {
+        "reportPath": "reports",
+        "reportFile": "test-reporter.xml",
+        "indent": 4
+    }
+}

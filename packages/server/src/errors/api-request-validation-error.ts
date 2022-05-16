@@ -1,5 +1,5 @@
 import { ValidationError } from 'express-validator';
-import { CustomError } from './custom-error';
+import { CustomError } from '../../../core/src/errors/custom-error';
 
 /**
  * This is an enhanced version of BadRequestError, built in with express validator
