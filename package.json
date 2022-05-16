@@ -6,7 +6,7 @@
     "description": "This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️",
     "scripts": {
         "test": "lerna run test --parallel",
-        "start": "lerna run start --parallel",
+        "build": "lerna run build --parallel",
         "lint": "lerna run lint --parallel",
         "publish": "lerna publish --no-push"
     },

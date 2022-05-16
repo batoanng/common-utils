@@ -82,7 +82,7 @@ describe('withRetry', () => {
 
         const promise = callback();
 
-        await expect(promise).rejects.toThrow(new Error(`error 2`));
+        await expect(promise).rejects.toThrow(new Error('error 2'));
         expect(fetcher).toHaveBeenCalledTimes(2);
     });
 

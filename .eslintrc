@@ -1,19 +1,9 @@
 {
     "parser": "@typescript-eslint/parser",
-    "extends": ["airbnb-base", "plugin:prettier/recommended"],
     "plugins": ["@typescript-eslint"],
+    "extends": ["prettier"],
     "env": {
         "jest": true
-    },
-    "settings": {
-        "import/resolver": {
-            "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
-            }
-        }
-    },
-    "parserOptions": {
-        "project": "./tsconfig.eslint.json"
     },
     "rules": {
         "import/extensions": "off",
@@ -37,5 +27,13 @@
         "no-await-in-loop": "warn",
         "no-continue": "warn"
     },
-    "ignorePatterns": "src/index.ts"
+    "ignorePatterns": [
+        "**/config/**/*.js",
+        "**.node_modules/**/*.{ts,js,tsx,jsx}",
+        "**/coverage/lcov-report/*.js",
+        "**/public/webcomponentjs",
+        "build",
+        "src/index.ts"
+    ]
 }
+

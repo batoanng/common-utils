@@ -146,6 +146,7 @@ async function fetchErrorInterceptor(error: unknown): Promise<unknown> {
             return new ApiNetworkError(message);
         }
     }
+    return error;
 }
 
 export interface ClientOptions {
