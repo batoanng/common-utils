@@ -12,8 +12,10 @@
         "outDir": "./build",
         "moduleResolution": "node",
         "resolveJsonModule": true,
+        "sourceMap": true,
         "skipLibCheck": true,
         "jsx": "react"
     },
-    "exclude": ["node_modules", "build", "src/*/**/*.test.ts"]
+    "exclude": ["node_modules", "build", "src/*/**/*.test.ts"],
+    "include": ["src"]
 }
