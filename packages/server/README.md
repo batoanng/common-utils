@@ -10,7 +10,7 @@ Using Yarn
 Using NPM
 >npm i @joker7t/common-server
 
-## features:
+## Features:
 
 
 ## **Versions:**

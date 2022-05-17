@@ -1,15 +1,23 @@
 # common-utils
 
 ### This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️.
+This repo contains 3 packages:
+1. [common-core](https://github.com/joker7t/common-utils/tree/master/packages/core): contains common utils, templates.
+1. [common-react](https://github.com/joker7t/common-utils/tree/master/packages/react): specific utils for react.
+1. [common-server](https://github.com/joker7t/common-utils/tree/master/packages/server): specific utils for server.
 
 ## **Versions:**
 
 ### common-core
+#### `1.0.0`
 
 ### common-react
+#### `1.0.0`
 
 ### common-server
+#### `1.0.0`
 
+---
 ### `2.0.0`
 
 ### `1.0.4`
