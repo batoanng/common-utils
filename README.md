@@ -14,6 +14,14 @@ Using NPM
 
 ## **Versions:**
 
+### common-core
+
+### common-react
+
+### common-server
+
+### `2.0.0`
+
 ### `1.0.4`
 - React:
     - **useQuery**
