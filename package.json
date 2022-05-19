@@ -8,7 +8,7 @@
         "test": "lerna run test --parallel",
         "build": "lerna run build --parallel",
         "lint": "lerna run lint --parallel",
-        "publish": "lerna publish --no-push"
+        "pub": "lerna publish --no-push"
     },
     "repository": {
         "type": "git",
