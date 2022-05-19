@@ -24,10 +24,6 @@
     },
     "license": "ISC",
     "homepage": "https://github.com/joker7t/common-utils/packages/core#readme",
-    "devDependencies": {
-    },
-    "dependencies": {
-    },
     "lint-staged": {
         "*.{js,ts,jsx}": [
             "yarn lint"
