@@ -23,7 +23,7 @@
         "lint": "eslint . --ext js,ts,tsx --fix"
     },
     "license": "ISC",
-    "homepage": "https://github.com/joker7t/common-utils/packages/core#readme",
+    "homepage": "https://github.com/joker7t/common-utils/tree/master/packages/core#readme",
     "lint-staged": {
         "*.{js,ts,jsx}": [
             "yarn lint"
