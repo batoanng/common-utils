@@ -17,6 +17,8 @@ export * from './utils/memoize';
 export * from './utils/error-text';
 export * from './utils/group-by-key-set';
 export * from './utils/date';
+export * from './utils/format-number';
+export * from './utils/format-file-size';
 
 // Async utils
 export * from './async-utils/sleep';

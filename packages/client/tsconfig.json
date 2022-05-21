@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "lib": ["es6", "es5", "es7", "dom"],
+        "typeRoots": ["src/@types", "node_modules/@types"],
+        "allowJs": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "outDir": "./build",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "jsx": "react"
+    },
+    "exclude": ["node_modules", "build", "src/*/**/*.test.ts"],
+    "include": ["src"]
+}

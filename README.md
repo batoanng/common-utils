@@ -1,14 +1,22 @@
 # common-utils
 
 ### This is a simple code share, contains some useful functions which you can use to make your work easier ✌️✌️.
-This repo contains 3 packages:
+This repo contains 4 packages:
 1. [common-core](https://github.com/joker7t/common-utils/tree/master/packages/core): contains common utils, templates.
-1. [common-react](https://github.com/joker7t/common-utils/tree/master/packages/react): specific utils for react.
-1. [common-server](https://github.com/joker7t/common-utils/tree/master/packages/server): specific utils for server.
+2. [common-react](https://github.com/joker7t/common-utils/tree/master/packages/react): specific utils for react.
+3. [common-server](https://github.com/joker7t/common-utils/tree/master/packages/server): specific utils for server side.
+4. [common-client](https://github.com/joker7t/common-utils/tree/master/packages/client): specific utils for client.
 
 ## **Versions:**
 
 ### common-core
+#### `1.0.1`
+##### Utils
+- **formatNumber(num: number)**
+  - Format number to K base.
+- **formatFileSize(size: number)**
+  - Format file size to ['B', 'KB', 'MB', 'GB', 'TB'] suffix.
+
 #### `1.0.0`
 ##### Utils
 - **memoize<T extends Function>(func: T): T**
@@ -129,6 +137,16 @@ This repo contains 3 packages:
     - This is an enhanced version of [ApiBadRequestError](https://github.com/joker7t/common-utils/blob/master/packages/core/src/errors/api-bad-request-error.ts), built in with express validator.
     - Allow you to pass your invalid params and its validate message.
 
+### common-client
+#### `1.0.0`
+##### Utils
+- **copyToClipboard(text: string)**
+  - A function which can be applied to HTML element to copy a text to clipboard.
+
+##### Async utils
+- **copyImageToClipboard(imageElement: any)** 
+  - A function which can be applied to HTML element to copy an image to clipboard.
+  - NOTE: Just work with png images.
 
 ---
 ### `2.0.0`

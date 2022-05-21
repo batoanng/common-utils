@@ -22,6 +22,11 @@ Using NPM
   - Transform a DD/MM/YYYY date string to ISO date string
 - **isIsoDateValid(isoDateString: any): isoDateString is string**
   - Validate an ISO date string
+- **formatNumber(num: number)**
+  - Format number to K base.
+- **formatFileSize(size: number)**
+  - Format file size to ['B', 'KB', 'MB', 'GB', 'TB'] suffix.
+
 
 ### Async utils
 - **HttpClient**
