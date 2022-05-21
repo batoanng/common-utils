@@ -5,7 +5,7 @@ This repo contains 4 packages:
 1. [common-core](https://github.com/joker7t/common-utils/tree/master/packages/core): contains common utils, templates.
 2. [common-react](https://github.com/joker7t/common-utils/tree/master/packages/react): specific utils for react.
 3. [common-server](https://github.com/joker7t/common-utils/tree/master/packages/server): specific utils for server side.
-4. [common-client](https://github.com/joker7t/common-utils/tree/master/packages/client): specific utils for client.
+4. [common-client](https://github.com/joker7t/common-utils/tree/master/packages/client): specific utils for client side.
 
 ## **Versions:**
 
