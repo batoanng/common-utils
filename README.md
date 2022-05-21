@@ -150,12 +150,7 @@ This repo contains 4 packages:
 
 ---
 ### `2.0.0`
-From this version, this repo is split to:
-- [@joker7t/common-core](https://github.com/joker7t/common-utils/tree/master/packages/core)
-- [@joker7t/common-react](https://github.com/joker7t/common-utils/tree/master/packages/react)
-- [@joker7t/common-server](https://github.com/joker7t/common-utils/tree/master/packages/server)
-
-This repo has been built to monorepo, powered by [Lerna](https://lerna.js.org/). The reason behind this split is allowing specific functions to specific platforms. i.e. in version `1.0.4`, if you just use the core utils in server side, this package still installs react lib because it is wrapped together when I add react utils and vice versa. From now, you can choose the package you need and install it independently.
+From this version, this repo is split to [multi smaller repo](https://github.com/joker7t/common-utils/tree/master/packages). This repo has been built to monorepo, powered by [Lerna](https://lerna.js.org/). The reason behind this split is allowing specific functions to specific platforms. i.e. in version `1.0.4`, if you just use the core utils in server side, this package still installs react lib because it is wrapped together when I add react utils and vice versa. From now, you can choose the package you need and install it independently.
 
 ### `1.0.4`
 - React:
