@@ -10,6 +10,9 @@ This repo contains 4 packages:
 ## **Versions:**
 
 ### common-core
+#### `1.0.2`
+- Fix the js version of the target when bundling files, which makes version `1.0.1` cannot be used.
+
 #### `1.0.1`
 ##### Utils
 - **formatNumber(num: number)**
@@ -78,6 +81,9 @@ This repo contains 4 packages:
 
 
 ### common-react
+#### `1.0.1`
+- Fix the js version of the target when bundling files, which makes version `1.0.0` cannot be used.
+
 #### `1.0.0`
 ##### Hooks
 - **useQuery**
@@ -112,6 +118,9 @@ This repo contains 4 packages:
   ```
 
 ### common-server
+#### `1.0.1`
+- Fix the js version of the target when bundling files, which makes version `1.0.0` cannot be used.
+
 #### `1.0.0`
 ##### Middlewares
 - **validateRequest**
@@ -138,6 +147,9 @@ This repo contains 4 packages:
     - Allow you to pass your invalid params and its validate message.
 
 ### common-client
+#### `1.0.1`
+- Fix the js version of the target when bundling files, which makes version `1.0.0` cannot be used.
+
 #### `1.0.0`
 ##### Utils
 - **copyToClipboard(text: string)**

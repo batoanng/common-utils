@@ -12,9 +12,8 @@ export class ApiNetworkError extends CustomError {
     msg: string;
 
     constructor(errorMsg?: string) {
-        const msg = errorMsg || 'Network error';
-        super(msg);
-        this.msg = msg;
+        super(errorMsg || 'Network error');
+        this.msg = errorMsg || 'Network error';
         Object.setPrototypeOf(this, ApiNetworkError.prototype);
     }
 
