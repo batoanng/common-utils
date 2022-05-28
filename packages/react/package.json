@@ -1,7 +1,7 @@
 {
     "author": "Toan Nguyen Ba",
     "name": "@joker7t/common-react",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "publishConfig": {
         "access": "public"
@@ -40,7 +40,7 @@
         "react-test-renderer": "^17.0.2"
     },
     "dependencies": {
-        "@joker7t/common-core": "^1.0.0",
+        "@joker7t/common-core": "^1.0.2",
         "react": "^17.0.2"
     },
     "lint-staged": {
