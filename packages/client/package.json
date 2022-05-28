@@ -1,7 +1,7 @@
 {
     "author": "Toan Nguyen Ba",
     "name": "@joker7t/common-client",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "publishConfig": {
         "access": "public"
