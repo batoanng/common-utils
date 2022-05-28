@@ -44,6 +44,7 @@
         "lodash": "^4.17.21"
     },
     "workspaces": [
+        "packages/client",
         "packages/core",
         "packages/react",
         "packages/server"
